@@ -29,7 +29,7 @@ h1, h2, h3 {
 /* Different background images for sections */
 #home {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(214, 41, 41, 0.5)), url('images/home.png');
-    color: rgb(179, 51, 51);
+    color: rgb(244, 242, 242);
 }
 
 #research {
@@ -42,10 +42,10 @@ h1, h2, h3 {
     color: white;
 }
 
-#contacts {
+/* #contacts {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/img2.png');
     color: white;
-}
+} */
 .parallax-content {
     text-align: center;
     padding: 2rem;
