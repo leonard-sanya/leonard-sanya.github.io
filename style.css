@@ -7,7 +7,7 @@ body, html {
     color: #333;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
 }
@@ -27,22 +27,22 @@ h1, h2, h3, h4 {
 }
 
 /* Different background images for sections */
-.home {
+#home {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/home.png');
     color: white;
 }
 
-.research {
+#research {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/img1.png');
     color: white;
 }
 
-.projects {
+#projects {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/img2.png');
     color: white;
 }
 
-.contacts {
+#contacts {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/img3.png');
     color: white;
 }
