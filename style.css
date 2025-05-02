@@ -28,7 +28,7 @@ h1, h2, h3 {
 
 /* Different background images for sections */
 #home {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(214, 41, 41, 0.5)), url('images/home.png');
+    background-image: linear-gradient(rgba(233, 229, 229, 0.5), rgba(235, 228, 228, 0.5)), url('images/home.png');
     color: rgb(244, 242, 242);
 }
 
