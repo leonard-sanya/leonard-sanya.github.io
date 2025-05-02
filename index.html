@@ -1,85 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Portfolio - Mr. Leonard Sanya</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <title>Parallax Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- W3.CSS stylesheet -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!-- Font and Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body, h1, h2, h3, h4, h5, h6 { font-family: "Raleway", sans-serif }
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      position: relative;
+      opacity: 0.85;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bgimg-1 { background-image: url("https://www.w3schools.com/w3images/parallax1.jpg"); min-height: 100vh; }
+    .bgimg-2 { background-image: url("https://www.w3schools.com/w3images/parallax2.jpg"); min-height: 400px; }
+    .bgimg-3 { background-image: url("https://www.w3schools.com/w3images/parallax3.jpg"); min-height: 400px; }
+
+    .w3-wide { letter-spacing: 10px; }
+    .w3-hover-opacity { cursor: pointer; }
+  </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-        </ul>
-    </nav>
 
-    <!-- Parallax Sections -->
-    <section id="home" class="parallax">
-        <div class="parallax-content">
-            <h1>Mr. Leonard Sanya</h1>
-            <p>Research Intern</p>
-            <p>Center for Data Science and Artificial Intelligence</p>
+<!-- Parallax Image 1 -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-jumbo w3-wide">PARALLAX</span>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>I love design</em></p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt tincidunt aliquam. Etiam gravida sollicitudin ligula, non pretium risus.</p>
+</div>
+
+<!-- Parallax Image 2 -->
+<div class="bgimg-2 w3-display-container w3-grayscale-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Portfolio Section -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my projects.</em></p>
+  <!-- Add your images/projects here -->
+</div>
+
+<!-- Parallax Image 3 -->
+<div class="bgimg-3 w3-display-container w3-grayscale-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="https://www.w3schools.com/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+      </div>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
         </div>
-    </section>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
 
-    <section id="about" class="content">
-        <h2>About Me</h2>
-        <div class="section-content">
-            <h3>Background</h3>
-            <p>Your professional background and education here...</p>
-            
-            <h3>Research Focus</h3>
-            <p><strong>Fish drying optimization</strong> - Developing sustainable solutions for East Africa...</p>
-        </div>
-    </section>
-
-    <section id="research" class="parallax">
-        <div class="parallax-content">
-            <h2>Research Interests</h2>
-            <div class="research-items">
-                <h3>Sustainable Food Preservation</h3>
-                <p>Developing energy-efficient drying techniques...</p>
-                
-                <h3>Machine Learning Applications</h3>
-                <p>Creating optimization frameworks for agricultural processes...</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="content">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <article class="project">
-                <h3>Solar-Assisted Fish Drying System</h3>
-                <p>An innovative approach combining solar energy with machine learning...</p>
-            </article>
-        </div>
-    </section>
-
-    <section id="contacts" class="content">
-        <h2>Contact Information</h2>
-        <div class="contact-details">
-            <p><strong>Email:</strong> leonard.sanya@aimsammi.org</p>
-            <p><strong>Institution:</strong> AIMS Rwanda</p>
-            <p><strong>Address:</strong> [Your physical address]</p>
-        </div>
-    </section>
-
-
-    
-
-    <script src="script.js"></script>
-</body>
-
-<footer>
-    <p>&copy; 2023 Leonard Sanya. All rights reserved.</p>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/" target="_blank">w3.css</a></p>
 </footer>
 
+</body>
 </html>
