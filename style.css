@@ -28,12 +28,12 @@ h1, h2, h3 {
 
 /* Different background images for sections */
 #home {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/lab-background.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/lab-img1.png');
     color: white;
 }
 
 #research {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/research-background.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/research-img2.png');
     color: white;
 }
 
