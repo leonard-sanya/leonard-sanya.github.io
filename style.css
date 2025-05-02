@@ -37,6 +37,15 @@ h1, h2, h3 {
     color: white;
 }
 
+#projects {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/img3.png');
+    color: white;
+}
+
+#contacts {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/img2.png');
+    color: white;
+}
 .parallax-content {
     text-align: center;
     padding: 2rem;
