@@ -9,34 +9,43 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body, h1, h2, h3, h4, h5, h6 { font-family: "Raleway", sans-serif }
-    .bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4,.bgimg-5 {
+    
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
       position: relative;
       opacity: 0.85;
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      filter: brightness(1.0); /* Increase brightness (1 is normal, >1 is brighter) */
+      filter: brightness(1.0);
+      /* Increased section height */
+      min-height: 600px; /* Changed from 400px */
     }
 
-
-    .bgimg-1 { background-image: url("images/pic4.jpg"); min-height: 400px; }
-    .bgimg-2 { background-image: url("images/pic1.jpg"); min-height: 400px; }
-    .bgimg-3 { background-image: url("images/pic8.avif"); min-height: 400px; }
-    .bgimg-4 { background-image: url("images/pic9.jpg"); min-height: 400px; }
-    .bgimg-5 { background-image: url("images/pic5.jpg"); min-height: 400px; }
-
+    .bgimg-1 { background-image: url("images/pic4.jpg"); }
+    .bgimg-2 { background-image: url("images/pic1.jpg"); }
+    .bgimg-3 { background-image: url("images/pic8.avif"); }
+    .bgimg-4 { background-image: url("images/pic9.jpg"); }
+    .bgimg-5 { background-image: url("images/pic5.jpg"); }
 
     .w3-wide { letter-spacing: 10px; }
     .w3-hover-opacity { cursor: pointer; }
 
+    /* Reduced container margins */
     .w3-container, .w3-content {
         padding-left: 10px;
         padding-right: 10px;
-        margin-left: 200px;
-        margin-right: auto;}
+        margin-left: 50px; /* Reduced from 200px */
+        margin-right: 50px; /* Changed from auto to match left */
+        max-width: none; /* Allows full expansion */
+    }
 
-  </style>
+    /* Optional: Make content wider to utilize the extra space */
+    .w3-main {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+</style>
 </head>
 <!-- Navbar (sticky at top) -->
 <div class="w3-top">
