@@ -11,16 +11,15 @@
     body, h1, h2, h3, h4, h5, h6 { font-family: "Raleway", sans-serif }
     
     .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
-      position: relative;
-      opacity: 0.85;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      filter: brightness(1.0);
-      /* Increased section height */
-      min-height: 600px; /* Changed from 400px */
-      max-width: none !important;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw !important;
+        margin-right: -50vw !important;
+        min-height: 600px;
+        background-attachment: fixed;
+        background-size: cover;
     }
 
     .bgimg-1 { background-image: url("images/pic4.jpg"); }
