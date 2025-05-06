@@ -417,51 +417,51 @@
 
     <style>
         .project-box {
-            flex: 1 1 calc(33.333% - 20px); /* 3 columns */
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-            border-radius: 8px;
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-          }
-          
-          @media (max-width: 992px) {
-            .project-box {
-              flex: 1 1 calc(50% - 20px); /* 2 columns */
-            }
-          }
-          
-          @media (max-width: 600px) {
-            .project-box {
-              flex: 1 1 100%; /* Full width */
-            }
-          }
-          
-          .project-box img {
-            width: 100%;
-            height: 200px;
-            object-fit: contain;
-            border-bottom: 1px solid #eee;
-          }
-          
-          .project-box .content {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            padding: 16px;
-            height: 100%;
-          }
-          
-          .project-box h5 {
-            margin: 10px 0;
-          }
-          
-          .project-box a {
-            margin-top: auto;
-            align-self: flex-start;
-          }
+    flex: 1 1 30%;
+    max-width: calc(33.333% - 20px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevents border-radius issues */
+}
+
+.project-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: #f5f5f5;
+}
+
+.project-box .content {
+    flex: 1;
+    min-height: 150px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-box a {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .project-box {
+        flex-basis: 45%;
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .project-box {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
         </style>
       <!-- Template: Project Card -->
       <!-- Repeat for each project -->
